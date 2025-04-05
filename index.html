@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RenzEditz</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen px-4">
+
+    <!-- Foto Profil -->
+    <div class="flex flex-col items-center text-center">
+        <img src="https://placehold.co/150" alt="Profile" class="w-28 h-28 rounded-full shadow-lg">
+        <h1 class="text-2xl font-bold mt-2">Renz Editz</h1>
+        <p class="text-gray-300">Designer & Content Creator</p>
+    </div>
+
+    <!-- Icon Sosial Media -->
+    <div class="flex space-x-4 mt-4">
+        <a href="https://www.instagram.com/watteditz/" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-pink-500 text-3xl">
+            <i data-feather="instagram"></i>
+        </a>
+        <a href="https://youtube.com/@watts14?si=KgIiMrAL2yb5RK2y" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-red-500 text-3xl">
+            <i data-feather="youtube"></i>
+        </a>
+        <a href="https://t.me/renpresent" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-blue-400 text-3xl">
+            <i data-feather="send"></i>
+        </a>
+    </div>
+
+    <!-- Tautan Link -->
+    <div class="flex flex-col items-center space-y-4 w-full max-w-md mt-6">
+        <!-- Alight Motion -->
+        <a href="https://wa.me/6281397683148?text=mau+langganan+am+enn" target="_blank" rel="noopener noreferrer"
+           class="flex items-center justify-center w-full px-6 py-3 bg-gray-800 text-white text-center rounded-full transition duration-300 hover:bg-white hover:text-gray-900">
+            <div class="flex items-center space-x-2">
+                <img src="https://play-lh.googleusercontent.com/OU0BlP8C9-V7ECl2crma7B48nzDbK7liSLjn0j_fpTlyWG6qyEE-mw_KFZ9aOXF0a3w" 
+                     alt="Alight Motion" class="w-6 h-6 rounded-full"> 
+                <span>Beli Alight Motion Premium</span>
+            </div>
+        </a>
+        <a href="https://t.me/renpresent" target="_blank" rel="noopener noreferrer"
+           class="block w-full px-6 py-3 bg-blue-500 text-white text-center rounded-full hover:bg-blue-600 transition flex items-center justify-center space-x-2">
+            <i data-feather="send"></i>
+            <span>Telegram</span>
+        </a>
+        <a href="https://www.instagram.com/watteditz/" target="_blank" rel="noopener noreferrer"
+           class="block w-full px-6 py-3 bg-pink-500 text-white text-center rounded-full hover:bg-pink-600 transition flex items-center justify-center space-x-2">
+            <i data-feather="instagram"></i>
+            <span>Instagram</span>
+        </a>
+        <a href="https://youtube.com/@watts14?si=KgIiMrAL2yb5RK2y" target="_blank" rel="noopener noreferrer"
+           class="block w-full px-6 py-3 bg-red-500 text-white text-center rounded-full hover:bg-red-600 transition flex items-center justify-center space-x-2">
+            <i data-feather="youtube"></i>
+            <span>YouTube</span>
+        </a>
+    </div>
+
+    <!-- Copyright -->
+     <footer class="mt-8 text-gray-400 text-sm text-center">
+        &copy; <span id="year"></span> Renz. All rights reserved.
+    </footer>
+
+    <!-- Script Feather Icons -->
+    <script>
+        feather.replace();
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
